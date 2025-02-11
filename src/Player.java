@@ -35,6 +35,7 @@ public class Player {
      * @return new Player with attributed name and score
      */
     public Player createClone(String name, int score){
+
         return new Player(this.name, this.score);
     }
 
@@ -55,18 +56,34 @@ public class Player {
         else{return false;}
     }
 
+    /**;
+     * getName: retrieves player name
+     * @return player name
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * setName: sets players name
+     * @param name sets this.name as players name
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * getScore: gets players score
+     * @return players score
+     */
     public int getScore() {
         return score;
     }
 
+    /**
+     * setScore: sets players score
+     * @param score sets this.score equal to players score
+     */
     public void setScore(int score) {
         this.score = score;
     }
