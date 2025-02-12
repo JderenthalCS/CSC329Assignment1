@@ -1,3 +1,7 @@
+/**
+ * Node from within linkedList
+ * Reference Player, and next node -> []
+ */
 public class Node {
     Player player;
     Node next;

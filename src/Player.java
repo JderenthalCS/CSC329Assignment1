@@ -1,3 +1,6 @@
+/**
+ * Player object w/ name, score
+ */
 public class Player {
         String name;
         int score;
@@ -40,20 +43,24 @@ public class Player {
     }
 
     /**
-     *
-     * @param player
+     * Compares new object and Player object
+     * If objects are same memory location, return true
+     * If new object (player2) is not object of Player return False
+     * Compare names
+     * @param player2
      * @return
      */
     @Override
-    public boolean equals(Player player){
-        if(player.getName() == player.getName()){
-            if(this.name.equals(player.getName())){
-                    return true;
-        }}
-        if(player.getScore() == player.getScore()){
+    public boolean equals(Object player2){
+        if (player2 == this){ //If objects are the same, True (Same instance = equals)
             return true;
         }
-        else{return false;}
+        if (!(player2 instanceof Player)){ //If object is not Player, False
+            return false;
+        }
+        Player tempPlayer = (Player) player2; //Typecast player2 to Player(object)
+
+        return this.name.equals(tempPlayer.name); //Compares names
     }
 
     /**;

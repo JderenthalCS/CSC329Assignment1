@@ -1,3 +1,6 @@
+/**
+ * Interface for Player objects
+ */
 public interface PriorityQueue {
 
     /**
