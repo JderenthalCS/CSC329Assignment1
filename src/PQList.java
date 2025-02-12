@@ -39,7 +39,7 @@ public class PQList implements PriorityQueue{
      * Creates new PQList via PQList(PQList other) Deep Copy Constructor
      * @return
      */
-    public PQList createClone(Node head, Node tail, int size){
+    public PQList createClone(){
         return new PQList(this);
     }
 
@@ -52,12 +52,16 @@ public class PQList implements PriorityQueue{
         //Creating a new node
         Node newNode = new Node(player);
 
-        if(tail == null){
+        if(head == null){ //If head is null, linkedList is empty
+            //New node is both head & tail
+            head = newNode;
             tail = newNode;
         } else {
             tail.next = newNode;
-            size++; //Increment size as new node is created
+            tail = newNode;
+
         }
+        size++; //Increment size as new node is created
     }
 
     /**
