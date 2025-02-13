@@ -18,9 +18,9 @@ public class PQList implements PriorityQueue{
 
     /**
      *  Deep Copy Constructor:
-     *  Sets head, tail & size to null/0.
+     *  Creates empty list, iterates through given list creating new player object at each node (Deep Copy)
      *
-     * @param other old linkedList
+     * @param other
      */
     public PQList(PQList other){
         this.head = null;
@@ -45,7 +45,8 @@ public class PQList implements PriorityQueue{
 
 
     /**
-     * Creates newNode at tail or tail.next depending on null
+     * If list is empty, newNode = head, tail
+     * else newNode is created
      * @param player
      */
     public void add(Player player){
@@ -74,7 +75,9 @@ public class PQList implements PriorityQueue{
 
     /**
      * getHighestScorePlayer()
-     * Finds player with highest score, removes them
+     * Iterate through list, find highest score player
+     * remove highest player node from list and return player
+     *
      * @return
      */
     @Override

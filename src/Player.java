@@ -33,8 +33,8 @@ public class Player {
 
     /**
      * createClone method which creates a new Player
-     * @param name Attributes name to new player
-     * @param score Attributes score to new player
+     * @param name
+     * @param score
      * @return new Player with attributed name and score
      */
     public Player createClone(String name, int score){
@@ -73,7 +73,7 @@ public class Player {
 
     /**
      * setName: sets players name
-     * @param name sets this.name as players name
+     * @param name
      */
     public void setName(String name) {
         this.name = name;
@@ -89,7 +89,7 @@ public class Player {
 
     /**
      * setScore: sets players score
-     * @param score sets this.score equal to players score
+     * @param score
      */
     public void setScore(int score) {
         this.score = score;

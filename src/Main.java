@@ -2,6 +2,10 @@ import java.util.*;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
+/**
+ * Main class
+ *
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -74,7 +78,7 @@ public class Main {
         System.out.println("\n------------------------");
         System.out.println("Clearing Players & Scores: ");
         pq.clear();
-        System.out.println("Size & Empty Status: After manual entry");
+        System.out.println("Size & Empty Status: ");
         //getSize3
         System.out.println("Current Size: " +pq.getSize());
         //isEmpty3
@@ -83,10 +87,3 @@ public class Main {
 
     }
 }
-
-/** Questions:
- *  1. Should main recieve Javadoc?
- *  2. Are javadoc's correct?
- *  3. FileReader issues!!!!
- *  4. Are inMethod comments okay, as they assist me while coding.
- */
